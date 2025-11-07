@@ -9,7 +9,8 @@ body{
  
 }
 .mainTitle{
-    font-size: 60px;
+    font-size: 40px;
+    margin-bottom: 0%;
     
 }
 img {
@@ -63,26 +64,46 @@ a{
   font-family: 'Nunito';
   src: url(Nunito/static/Nunito-Regular.ttf) format('truetype');
 }
-.logo {
-  width: 140px;
-  height: auto;
-  position: absolute;
-  top: 15px;
-  right: 50px;
-}
+
 background-image {
   opacity: 0.5;
 }
-.pizza {
-  width: 60px;
-  height: auto;
-  position: absolute;
-  top: 50px;
-  right: 20px;
-}
+
 .pizza:hover {
   transform: scale(1.1);
 }
+.header {
+  position: relative;   /* ✅ replaces absolute */
+  top: 0%;
+  left: 0;
+  display: flex;
+  align-items: center;
+ 
+  
+}
+
+
+.mainTitle {
+  font-size: 40px;
+ 
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  position: static;     /* remove absolute positioning */
+}
+
+.pizza {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.pizza:hover {
+  transform: scale(1.1);
+}
+
 .main{
    background-image: url(puoti.jpeg);
     
@@ -106,4 +127,14 @@ background-image {
 .almost_title{
     font-size: 50px;
     color: #FBF3D1;
+}
+.pizzaimage{
+    width: 200px;
+
+    height: auto;
+    /* next to each other */
+    display: inline-block;
+    margin: 10px;
+    
+    
 }
