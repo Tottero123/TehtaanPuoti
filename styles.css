@@ -1,0 +1,123 @@
+body {
+  background-color: #DEDED1;
+  font-family: monospace;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* Title */
+.mainTitle {
+  font-size: 13vw; /* default: mobile scaling */
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+/* ✅ Desktop: limit huge scaling */
+@media (min-width: 769px) {
+  .mainTitle {
+    font-size: 4rem; /* nice readable desktop size */
+  }
+}
+
+img {
+  width: 60%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto 0;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+img:hover {
+  opacity: 0.9;
+}
+
+video {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto 0;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/* Mobile-friendly image width */
+@media (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+}
+
+h1::selection {
+  background-color: #DEDED1;
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: right;
+  text-align: right;
+}
+
+a {
+  color: black;
+  font-size: 1.1rem;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('Nunito/static/Nunito-Regular.ttf') format('truetype');
+}
+
+/* ✅ Full-screen responsive background */
+.main {
+  background-image: url('puoti.jpeg');
+  background-size: cover;      /* fills screen */
+  background-position: center; /* centers image */
+  background-repeat: no-repeat;
+  
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.6);
+  min-height: 100vh; /* fills entire viewport */
+  padding-bottom: 50px;
+}
+
+/* Footer */
+.bottom {
+  background-color: #C5C7BC;
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+.bottom a {
+  color: white;
+  font-size: medium;
+}
+
+/* Other elements */
+.almost_title {
+  font-size: 2.5rem;
+  color: #FBF3D1;
+}
+
+.pizzaimage {
+  width: 15vw; /* 15% of viewport width */
+  max-width: 300px;
+  min-width: 120px;
+  height: auto;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Desktop: slightly larger text for readability */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
